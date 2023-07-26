@@ -1,0 +1,30 @@
+<div>
+    <div class="head">
+        <h1>{{movieName}}</h1>
+    </div>
+    <div *ngIf="datas.length>0">
+        <div *ngFor="let i of datas">
+            <div class="main">
+                <div>
+                    <h6>{{i.cinemaName}}</h6>
+                    <div class="main2">
+                        <div>
+                            <i class="fa-solid fa-mobile-screen-button" style="color: #15f943;"></i> M-ticket &nbsp; 
+
+                        </div>
+                        <div>
+                            &nbsp; <i class="fa-solid fa-burger" style="color: #f17109;"></i> Food & Beverage
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="main3">
+                    <div *ngFor="let j of i.time">
+                        <button class="btn" (click)="setSeats(j)">{{j}}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

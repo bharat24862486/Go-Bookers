@@ -1,0 +1,105 @@
+.pricing-cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgb(13,33,34);
+    padding: 10% 5%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+
+  .main{
+    background-color: rgb(13,33,34);
+    padding: 5% 5%;
+    text-align: center;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    
+  }
+  .main > h2:nth-child(1){
+    /* border: 1px solid black; */
+    padding: 5% 0%;
+    color: white;
+  }
+
+  .centers{
+   display: block;
+   margin: auto;
+   display: flex;
+   justify-content: center;
+   /* border: 1px solid black; */
+  }
+  
+  .pricing-card {
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .silver {
+    background-color: white;
+    border: 2px solid #FFC107;
+  }
+  
+  .platinum {
+    background-color: white;
+    border: 2px solid #FFC107;
+  }
+  
+  .gold {
+    background-color: white;
+    border: 2px solid #FFC107;
+  }
+  
+  .pricing-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .pricing-card h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .pricing-card p {
+    margin-bottom: 8px;
+  }
+  
+  .discount-info {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .buy-button-container {
+    margin-top: 20px;
+  }
+  
+  .buy-button {
+    background-color: white;
+    color: black;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #FFC107;
+  }
+
+  .buy-button:hover{
+    background-color: #FFC107;
+
+  }
+  
+  /* Add media query for responsiveness */
+  @media (max-width: 768px) {
+    .pricing-card {
+      width: 100%;
+    }
+  }
+  

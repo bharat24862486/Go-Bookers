@@ -1,0 +1,10 @@
+.footers{
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.text-white:hover {
+    color: yellow;
+  }

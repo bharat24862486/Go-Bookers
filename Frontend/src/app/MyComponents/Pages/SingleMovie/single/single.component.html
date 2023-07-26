@@ -1,0 +1,36 @@
+<div>
+    <div class="main" [ngStyle]="{'background-image': 'url(' + obj.background_image + ')'}">
+        <div class="main_child_1">
+
+            <img src={{obj.img}} alt="" class="Images" style="opacity: 1;">
+
+
+            <div class="flex_one">
+                <h2 class="main_heading">{{obj.title}}</h2>
+                <div class="main_child_2">
+                    <div>
+                        <h6>Add Your Rating and Review</h6>
+                        <h6>Your Ratings matters</h6>
+                    </div>
+                    <div>
+                        <button class="btn ">Rate Now</button>
+                    </div>
+                </div>
+                <h6 class="heading2">{{obj.print}}</h6>
+                <h6 class="heading2">{{obj.language}}</h6>
+                <div class="main_child_3">
+                    <h6>{{obj.duration}}  {{obj.genre}}</h6>
+                    
+                </div>
+
+                <button class="btn btn1" (click)="getClick(obj.title)">Book Now</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="second_main">
+        <h1>About the movie</h1>
+        <h5>{{obj.about}}</h5>
+    </div>
+</div>

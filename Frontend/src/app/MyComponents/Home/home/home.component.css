@@ -1,0 +1,38 @@
+.div_1{
+    background-color: rgb(13,33,34);
+    margin: 2%;
+}
+.flex1{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    column-gap: 2%;
+}
+.main_cont2{
+    margin: 5% 2%;
+}
+.Images1{
+    width: 100%;
+}
+
+.main_cont3{
+    margin: 5% 2%;
+}
+.Images2{
+    width: 100%;
+}
+.main_cont4{
+    background-color: rgb(43,49,73);
+    color: white;
+    padding: 5% 4%;
+}
+
+.premiers2{
+    margin-top: 0;
+    padding-top: 0;
+    font-size: medium;
+}
+.premiers1{
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+}

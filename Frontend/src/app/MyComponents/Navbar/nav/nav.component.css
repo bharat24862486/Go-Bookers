@@ -1,0 +1,125 @@
+/* navbar.component.css */
+
+.navbar {
+    background-color: rgb(13,33,34); /* Dark grey background */
+    color: white; /* White text color */
+    padding: 0% 1%; /* Top and bottom padding for the navbar */
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 30px; /* Right margin to create space between logo and links */
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #fff; /* White background for the mobile toggle icon */
+  }
+  
+  .navbar-nav {
+    display: flex;
+    align-items: center; /* Center items vertically */
+  }
+  
+  .nav-item {
+    margin: 0 10px; /* Space between navbar links */
+  }
+  
+  .nav-link {
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    color: #fff; /* White color for links */
+  }
+  
+  .nav-link:hover {
+    color: #f9e400; /* Hover color for links */
+  }
+  
+  
+  .form-controls {
+    width: 50%;
+
+     /* Adjust padding for the search bar */
+  }
+
+  .form-controls input{
+    width: 100%;
+    padding: 1%;
+    border-radius: 10px;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+  }
+
+  .form-controls2{
+    width: 20%;
+  }
+  .form-controls2 select{
+    width: 100%;
+    padding: 1.4%;
+    border-radius: 10px;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+  }
+  
+  .btn-outline-success {
+    border-color: #f9e400; /* Yellow border for the search button */
+    color: #f9e400; /* Yellow color for the search button */
+    margin-left: 10px; /* Add left margin to separate the search bar and button */
+  }
+  
+  .btn-outline-success:hover {
+    background-color: #f9e400; /* Yellow background on hover for the search button */
+    color: #333; /* Dark grey color on hover for the search button */
+  }
+  
+  .btn-outline-primary {
+    border-color: #fff; /* White border for the login button */
+    color: #fff; /* White color for the login button */
+    margin-left: auto; /* Move the login button to the right */
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #fff; /* White background on hover for the login button */
+    color: #333; /* Dark grey color on hover for the login button */
+  }
+
+  .logo {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(13,33,34);
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.logo-icon {
+    background-color: #FFC107;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+.logo-text {
+    margin-left: 5px;
+}
+  
+
+.search {
+  position:sticky;
+  top: 10px; 
+  padding: 10px;
+  height: 80vh;
+  background-color: white;
+}
+
+/* .twoBtn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+} */

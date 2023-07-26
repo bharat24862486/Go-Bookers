@@ -1,0 +1,163 @@
+<div class="div_1"><app-carosal1></app-carosal1></div>
+<div class="main_cont">
+    <div class="main_cont2">
+        <h3>Recommended Movies</h3>
+        <carousel>
+            <slide>
+                <div class="flex1">
+                    <div *ngFor="let item of arr1">
+                        <div (click)="getClickData(item)">
+                            <img src={{item.img}} class="Images1" />
+                        </div>
+                    </div>
+
+                </div>
+            </slide>
+            <slide>
+                <div class="flex1">
+                    <div *ngFor="let item of arr2">
+                        <div (click)="getClickData(item)">
+                            <img src={{item.img}} class="Images1" />
+                        </div>
+                    </div>
+                </div>
+            </slide>
+        </carousel>
+    </div>
+    <div class="main_cont3">
+        <img class="Images2"
+            src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120:q-80/stream-leadin-web-collection-202210241242.png"
+            alt="">
+    </div>
+
+    <div class="main_cont2">
+        <h3>The Best Of Live Events</h3>
+        <carousel>
+            <slide>
+                <div class="flex1">
+                    <div *ngFor="let item of arr3">
+                        <div>
+                            <img src={{item}} class="Images1" />
+                        </div>
+                    </div>
+
+                </div>
+            </slide>
+            <slide>
+                <div class="flex1">
+                    <div *ngFor="let item of arr4">
+                        <div>
+                            <img src={{item}} class="Images1" />
+                        </div>
+                    </div>
+                </div>
+            </slide>
+        </carousel>
+    </div>
+
+    <div class="main_cont2">
+        <h3>Recommended Movies</h3>
+        <carousel>
+            <slide>
+                <div class="flex1">
+                    <div *ngFor="let item of arr1">
+                        <div (click)="getClickData(item)">
+                            <img src={{item.img}} class="Images1" />
+                        </div>
+                    </div>
+
+                </div>
+            </slide>
+            <slide>
+                <div class="flex1">
+                    <div *ngFor="let item of arr2">
+                        <div (click)="getClickData(item)">
+                            <img src={{item.img}} class="Images1" />
+                        </div>
+                    </div>
+                </div>
+            </slide>
+        </carousel>
+    </div>
+    <div class="main_cont3">
+        <img class="Images2"
+            src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120:q-80/stream-leadin-web-collection-202210241242.png"
+            alt="">
+    </div>
+
+    <div class="main_cont2">
+        <h3>The Best Of Live Events</h3>
+        <carousel>
+            <slide>
+                <div class="flex1">
+                    <div *ngFor="let item of arr3">
+                        <div>
+                            <img src={{item}} class="Images1" />
+                        </div>
+                    </div>
+
+                </div>
+            </slide>
+            <slide>
+                <div class="flex1">
+                    <div *ngFor="let item of arr4">
+                        <div>
+                            <img src={{item}} class="Images1" />
+                        </div>
+                    </div>
+                </div>
+            </slide>
+        </carousel>
+    </div>
+
+    <div class="main_cont4">
+        <img class="Images1"
+            src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120:q-80/premiere-banner-web-collection-202208191200.png" />
+        <h3 class="premiers1">Premiers</h3>
+        <h4 class="premiers2">Brand New Releases Every Friday</h4>
+        <div class="flex1">
+            <div *ngFor="let item of arr5">
+                <div>
+                    <img src={{item}} class="Images1" />
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="main_cont2">
+        <h3>Laughter Therapy</h3>
+        <carousel>
+            <slide>
+                <div class="flex1">
+                    <div *ngFor="let item of arr6">
+                        <div>
+                            <img src={{item}} class="Images1" />
+                        </div>
+                    </div>
+
+                </div>
+            </slide>
+            <slide>
+                <div class="flex1">
+                    <div *ngFor="let item of arr7">
+                        <div>
+                            <img src={{item}} class="Images1" />
+                        </div>
+                    </div>
+                </div>
+            </slide>
+        </carousel>
+    </div>
+
+
+
+
+</div>
+
+
+<!-- <ng-template #searchpage>
+   
+
+</ng-template> -->

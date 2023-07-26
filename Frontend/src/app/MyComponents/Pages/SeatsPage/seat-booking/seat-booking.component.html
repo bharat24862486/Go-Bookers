@@ -1,0 +1,81 @@
+<div class="main">
+    <h1>Book your seats, your show timing is {{timing}}</h1>
+    <div class="container">
+        <div class="section">
+            <h2>Premium, ₹500 per seat</h2>
+            <div class="left-seats">
+                <div class="seat" *ngFor="let seat of premiumLeftSeats" [class.booked]="seat.booked"
+                    (click)="toggleBooking(seat)">
+                    {{ seat.seatNumber }}
+                </div>
+            </div>
+            <div class="right-seats">
+                <div class="seat" *ngFor="let seat of premiumRightSeats" [class.booked]="seat.booked"
+                    (click)="toggleBooking(seat)">
+                    {{ seat.seatNumber }}
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Platinum , ₹300 per seat</h2>
+            <div class="left-seats">
+                <div class="seat" *ngFor="let seat of platinumLeftSeats" [class.booked]="seat.booked"
+                    (click)="toggleBooking(seat)">
+                    {{ seat.seatNumber }}
+                </div>
+            </div>
+            <div class="right-seats">
+                <div class="seat" *ngFor="let seat of platinumRightSeats" [class.booked]="seat.booked"
+                    (click)="toggleBooking(seat)">
+                    {{ seat.seatNumber }}
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Silver, ₹190 per seat</h2>
+            <div class="left-seats">
+                <div class="seat" *ngFor="let seat of silverLeftSeats" [class.booked]="seat.booked"
+                    (click)="toggleBooking(seat)">
+                    {{ seat.seatNumber }}
+                </div>
+            </div>
+            <div class="right-seats">
+                <div class="seat" *ngFor="let seat of silverRightSeats" [class.booked]="seat.booked"
+                    (click)="toggleBooking(seat)">
+                    {{ seat.seatNumber }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="checkout-btn">
+        <button (click)="checkout()" class="btn"> Checkout</button>
+    </div>
+
+    <!-- Ticket Summary Modal -->
+    <div class="ticket-summary" *ngIf="showTicketSummary">
+        <h2>Ticket Summary</h2>
+        <div class="mains">
+            <div *ngFor="let ticketType of ticketTypes">
+                <p class="centers">{{ ticketType.name }}: {{ ticketType.count }} seats</p>
+                <div class="centers">
+                    <div *ngIf="ticketType.seats.length > 0">
+                        <ul style="text-decoration: none;">
+                            <div *ngFor="let seat of ticketType.seats">
+                                <li style="text-decoration: none;">Seat {{ seat.seatNumber }}</li>
+                            </div>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <h2>Your total is ₹{{total}}</h2>
+        <h2>Plan: {{userInfo.AccountType}}</h2>
+        <h2>Discount: {{cuurentDiscount}}%</h2>
+        <h2>Payble Amount: ₹{{finalPrice}}</h2>
+        <button (click)="closeTicketSummary()" class="btn">Continue</button>
+    </div>
+
+</div>

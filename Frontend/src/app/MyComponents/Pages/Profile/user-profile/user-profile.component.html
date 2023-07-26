@@ -1,0 +1,111 @@
+<div>
+    <div *ngIf="isRegistered; else:doRegister">
+        <div class="main">
+            <h2>Hello {{userInfo.UserName}}, Your Current Plan is,</h2>
+            <!-- <h3></h3> -->
+
+            <div class="centers">
+                <div *ngIf="userInfo.AccountType == silver ">
+
+                    <div class="pricing-card silver">
+                        <div>
+                            <h2>Silver Plan</h2>
+                            <h3>Price: 0 Rupees / month</h3>
+                            <p>No discount for purchasing tickets</p>
+                            <p>No discount on purchasing food</p>
+                        </div>
+                        <div class="buy-button-container">
+                            <button class="buy-button">Current Plan</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div *ngIf="userInfo.AccountType == platinum ">
+                    <div class="pricing-card platinum">
+                        <div>
+                            <h2>Platinum Plan</h2>
+                            <h3>Price: 250 Rupees / month</h3>
+                            <p>5% discount for purchasing tickets</p>
+                            <p>5% discount on purchasing food</p>
+                            <p>10% discount on booking more than 5 movie tickets at once</p>
+                        </div>
+                        <div class="buy-button-container">
+                            <button class="buy-button">Current Plan</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div *ngIf="userInfo.AccountType == gold ">
+                    <div class="pricing-card gold">
+                        <div>
+                            <h2>Gold Plan</h2>
+                            <h3>Price: 500 Rupees / month</h3>
+                            <p>30% discount for purchasing tickets</p>
+                            <p>40% discount on purchasing food</p>
+                            <p>20% discount on booking more than 3 movie tickets at once</p>
+                            <p>Free popcorn on every movie ticket purchase</p>
+                        </div>
+                        <div class="buy-button-container">
+                            <button class="buy-button">Current Plan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <ng-template #doRegister>
+        <div>
+            <div class="pricing-cards-container">
+                <!-- First Card -->
+                <div class="pricing-card silver">
+                    <div>
+                        <h2>Silver Plan</h2>
+                        <h3>Price: 0 Rupees / month</h3>
+                        <p>No discount for purchasing tickets</p>
+                        <p>No discount on purchasing food</p>
+                    </div>
+                    <div class="buy-button-container">
+                        <button class="buy-button" (click)="getPlan(silver)">Buy Plan</button>
+                    </div>
+                </div>
+
+                <!-- Second Card -->
+                <div class="pricing-card platinum">
+                    <div>
+                        <h2>Platinum Plan</h2>
+                        <h3>Price: 250 Rupees / month</h3>
+                        <p>5% discount for purchasing tickets</p>
+                        <p>5% discount on purchasing food</p>
+                        <p>10% discount on booking more than 5 movie tickets at once</p>
+                    </div>
+                    <div class="buy-button-container">
+                        <button class="buy-button" (click)="getPlan(platinum)">Buy Plan</button>
+                    </div>
+                </div>
+
+                <!-- Third Card -->
+                <div class="pricing-card gold">
+                    <div>
+                        <h2>Gold Plan</h2>
+                        <h3>Price: 500 Rupees / month</h3>
+                        <p>30% discount for purchasing tickets</p>
+                        <p>40% discount on purchasing food</p>
+                        <p>20% discount on booking more than 3 movie tickets at once</p>
+                        <p>Free popcorn on every movie ticket purchase</p>
+                    </div>
+                    <div class="buy-button-container">
+                        <button class="buy-button" (click)="getPlan(gold)">Buy Plan</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </ng-template>
+</div>
